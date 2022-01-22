@@ -74,4 +74,3 @@ ggdraw() +
   draw_plot(p) +
   draw_image(file.path(here("DM3.png")),
              x = 0, y = -0.075, scale = 1) 
-
