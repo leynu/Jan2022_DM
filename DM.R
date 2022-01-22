@@ -23,8 +23,7 @@ theme_set(theme_modern_rc() +
                   axis.ticks.y = element_blank(),
                   axis.text.y = element_blank(),
                   axis.title.y = element_blank(),                   
-                  axis.line = element_blank()#,
-                  #plot.margin = margin(0, 0, , 0, "cm")
+                  axis.line = element_blank()
             ))
           
           
@@ -69,10 +68,7 @@ p <- ggplot(spiral, aes(x, y, label = text)) +
   labs(caption = "@leynu | Jan 2022") +
   geom_textpath(size = 5.65, 
                 vjust = 2, 
-                text_only = TRUE, colour = "gray75")#+
-  # coord_equal(xlim = c(-xy_lim, xy_lim), 
-  #             ylim = c(-xy_lim, xy_lim))
-
+                text_only = TRUE, colour = "gray75")
 
 ggdraw() +
   draw_plot(p) +
